@@ -29,7 +29,7 @@
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		13B07FBD1A68108700A75B9A = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
+		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		13DC4E8E8BF90DA245B8F656 /* Il2CppCodeRegistration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13534858890E2300C6816D48 /* Il2CppCodeRegistration.cpp */; };
@@ -67,6 +67,7 @@
 		32894B5B839E4D01D13E9752 /* UnityEngine.GameCenterModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBB84AE9B0C25B2EF7175059 /* UnityEngine.GameCenterModule.cpp */; };
 		32BC4AADB5C56AD0C72DC18C /* FullScreenVideoPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B458480D050A6CE11047D /* FullScreenVideoPlayer.mm */; };
 		32D84429B15925E47A677B73 /* UnityEngine.UnityAnalyticsModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2971467C8358AB71A7E8E6AF /* UnityEngine.UnityAnalyticsModule.cpp */; };
+		33CE1166228B27DA00B31911 /* UnityConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 33CE1165228B27DA00B31911 /* UnityConfig.xcconfig */; };
 		34594C168C4E00B6D083862F /* CameraCapture.mm in Sources */ = {isa = PBXBuildFile; fileRef = C9E4424F903D1A82223B8429 /* CameraCapture.mm */; };
 		35F34C71A7C6E34DF8CDAFB9 /* mscorlib16.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D454F82FF4268AA224CED /* mscorlib16.cpp */; };
 		37EC482DB04221203BED11C0 /* UnityView+Keyboard.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F43399FF9FDF7DF53244D /* UnityView+Keyboard.mm */; };
@@ -331,19 +332,40 @@
 			remoteGlobalIDString = 3D383D621EBD27B9005632C8;
 			remoteInfo = "double-conversion-tvOS";
 		};
-		2DF0FFEA2056DD460020B375 /* PBXContainerItemProxy */ = {
+		33CE1158228B278D00B31911 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 9936F3131F5F2E4B0010BF04;
-			remoteInfo = privatedata;
+			remoteGlobalIDString = EDEBC6D6214B3E7000DD5AC8;
+			remoteInfo = jsi;
 		};
-		2DF0FFEC2056DD460020B375 /* PBXContainerItemProxy */ = {
+		33CE115A228B278D00B31911 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 9936F32F1F5F2E5B0010BF04;
-			remoteInfo = "privatedata-tvOS";
+			remoteGlobalIDString = EDEBC73B214B45A300DD5AC8;
+			remoteInfo = jsiexecutor;
+		};
+		33CE115C228B278D00B31911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED296FB6214C9A0900B7C4FE;
+			remoteInfo = "jsi-tvOS";
+		};
+		33CE115E228B278D00B31911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED296FEE214C9CF800B7C4FE;
+			remoteInfo = "jsiexecutor-tvOS";
+		};
+		33CE1163228B278F00B31911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAED1AA1D18745CAB8DEFA4A /* RNUnityView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1B593B5F2052A47600CBB34F;
+			remoteInfo = RNUnityView;
 		};
 		3DAD3E831DF850E9000B6D8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -421,20 +443,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 3D3CD9321DE5FBEE00167DC4;
 			remoteInfo = "cxxreact-tvOS";
-		};
-		3DAD3EAC1DF850E9000B6D8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3D3CD90B1DE5FBD600167DC4;
-			remoteInfo = jschelpers;
-		};
-		3DAD3EAE1DF850E9000B6D8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3D3CD9181DE5FBD800167DC4;
-			remoteInfo = "jschelpers-tvOS";
 		};
 		5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -519,7 +527,7 @@
 		0F884A77BAE44083A02954DD /* System.Globalization.Extensions_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = System.Globalization.Extensions_CodeGen.c; path = UnityExport/Classes/Native/System.Globalization.Extensions_CodeGen.c; sourceTree = SOURCE_ROOT; };
 		0FAC49A4A319826CAD35D273 /* MemoryPool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MemoryPool.h; path = UnityExport/Libraries/libil2cpp/include/utils/MemoryPool.h; sourceTree = SOURCE_ROOT; };
 		10214055BE62F840D6C69621 /* CVTextureCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CVTextureCache.h; path = UnityExport/Classes/Unity/CVTextureCache.h; sourceTree = SOURCE_ROOT; };
-		10DB4D19A6BD206DCD88B447 /* libil2cpp.def */ = {isa = PBXFileReference; lastKnownFileType = file; name = libil2cpp.def; path = UnityExport/Libraries/libil2cpp/include/libil2cpp.def; sourceTree = SOURCE_ROOT; };
+		10DB4D19A6BD206DCD88B447 /* libil2cpp.def */ = {isa = PBXFileReference; lastKnownFileType = text; name = libil2cpp.def; path = UnityExport/Libraries/libil2cpp/include/libil2cpp.def; sourceTree = SOURCE_ROOT; };
 		12174526BB85709777FF43E6 /* GenericMetadata.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GenericMetadata.h; path = UnityExport/Libraries/libil2cpp/include/metadata/GenericMetadata.h; sourceTree = SOURCE_ROOT; };
 		12BE44B7913FFE863B47B90A /* UnsafeNativeMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UnsafeNativeMethods.h; path = UnityExport/Libraries/libil2cpp/include/icalls/mscorlib/System.Runtime.InteropServices.WindowsRuntime/UnsafeNativeMethods.h; sourceTree = SOURCE_ROOT; };
 		13024032BD833E503155A1E1 /* NumberFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NumberFormatter.h; path = UnityExport/Libraries/libil2cpp/include/icalls/mscorlib/System/NumberFormatter.h; sourceTree = SOURCE_ROOT; };
@@ -602,6 +610,7 @@
 		326F402285CCC48D648A6812 /* MarshalingUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MarshalingUtils.h; path = UnityExport/Libraries/libil2cpp/include/utils/MarshalingUtils.h; sourceTree = SOURCE_ROOT; };
 		3377461E878966673F13E780 /* UnityTls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UnityTls.h; path = UnityExport/Libraries/libil2cpp/include/icalls/mscorlib/Mono.Unity/UnityTls.h; sourceTree = SOURCE_ROOT; };
 		338D4776B29369FDC7FAFB50 /* AppDomain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDomain.h; path = UnityExport/Libraries/libil2cpp/include/icalls/mscorlib/System/AppDomain.h; sourceTree = SOURCE_ROOT; };
+		33CE1165228B27DA00B31911 /* UnityConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = UnityConfig.xcconfig; sourceTree = "<group>"; };
 		33E9409396A2582BE933E98B /* UnityView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = UnityView.mm; path = UnityExport/Classes/UI/UnityView.mm; sourceTree = SOURCE_ROOT; };
 		340B4F10A2E382A79195A1B4 /* il2cpp-api-types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "il2cpp-api-types.h"; path = "UnityExport/Libraries/libil2cpp/include/il2cpp-api-types.h"; sourceTree = SOURCE_ROOT; };
 		34AA4D718CE57EF55F77F723 /* MetadataCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MetadataCache.h; path = UnityExport/Libraries/libil2cpp/include/vm/MetadataCache.h; sourceTree = SOURCE_ROOT; };
@@ -804,7 +813,7 @@
 		7CED4621AD7B96A0B5FBC789 /* Error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Error.h; path = UnityExport/Libraries/libil2cpp/include/os/Error.h; sourceTree = SOURCE_ROOT; };
 		7D124AD89A2D5C62CF08700F /* OrientationSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OrientationSupport.h; path = UnityExport/Classes/UI/OrientationSupport.h; sourceTree = SOURCE_ROOT; };
 		7D18434589C6116A25EBA2F3 /* TimeZone-c-api.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TimeZone-c-api.h"; path = "UnityExport/Libraries/libil2cpp/include/os/c-api/TimeZone-c-api.h"; sourceTree = SOURCE_ROOT; };
-		7D43E22067F840FEA96E7EDB /* libRNUnityView.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNUnityView.a; sourceTree = "<group>"; };
+		7D43E22067F840FEA96E7EDB /* libRNUnityView.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNUnityView.a; sourceTree = "<group>"; };
 		7D944341A225A073BF1F427D /* TemplateUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TemplateUtils.h; path = UnityExport/Libraries/libil2cpp/include/utils/TemplateUtils.h; sourceTree = SOURCE_ROOT; };
 		7E0143E7A7DB1A0036689D48 /* UnityEngine.UnityAnalyticsModule_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = UnityEngine.UnityAnalyticsModule_CodeGen.c; path = UnityExport/Classes/Native/UnityEngine.UnityAnalyticsModule_CodeGen.c; sourceTree = SOURCE_ROOT; };
 		7EEA469D8F2AA3F59DBFA794 /* KqueueMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KqueueMonitor.h; path = UnityExport/Libraries/libil2cpp/include/icalls/System/System.IO/KqueueMonitor.h; sourceTree = SOURCE_ROOT; };
@@ -964,7 +973,7 @@
 		B9FF4359AEC5A6C91E04B7C4 /* CLRConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CLRConfig.h; path = UnityExport/Libraries/libil2cpp/include/icalls/mscorlib/System/CLRConfig.h; sourceTree = SOURCE_ROOT; };
 		BA3641358D88884FF7AF0CEC /* RuntimeMarshal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RuntimeMarshal.h; path = UnityExport/Libraries/libil2cpp/include/icalls/mscorlib/Mono/RuntimeMarshal.h; sourceTree = SOURCE_ROOT; };
 		BA4B464AAFC732C2C25C0F2B /* UnityAppController+ViewHandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UnityAppController+ViewHandling.h"; path = "UnityExport/Classes/UI/UnityAppController+ViewHandling.h"; sourceTree = SOURCE_ROOT; };
-		BAE342D884C2CE9B62364D28 /* libil2cpp.icalls */ = {isa = PBXFileReference; lastKnownFileType = file; name = libil2cpp.icalls; path = UnityExport/Libraries/libil2cpp/include/libil2cpp.icalls; sourceTree = SOURCE_ROOT; };
+		BAE342D884C2CE9B62364D28 /* libil2cpp.icalls */ = {isa = PBXFileReference; lastKnownFileType = text; name = libil2cpp.icalls; path = UnityExport/Libraries/libil2cpp/include/libil2cpp.icalls; sourceTree = SOURCE_ROOT; };
 		BC1C484394984E59CDEF9236 /* PropertyInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PropertyInfo.h; path = UnityExport/Libraries/libil2cpp/include/icalls/mscorlib/System.Reflection/PropertyInfo.h; sourceTree = SOURCE_ROOT; };
 		BC6C4BE187138CAA71B8837E /* MarshalAlloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MarshalAlloc.h; path = UnityExport/Libraries/libil2cpp/include/os/MarshalAlloc.h; sourceTree = SOURCE_ROOT; };
 		BC9B4230A4599A5A6007F643 /* profile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = profile.json; path = UnityExport/Classes/Native/profile.json; sourceTree = SOURCE_ROOT; };
@@ -1128,7 +1137,7 @@
 		FA2A4129891B56D68155DF4C /* Il2CppGenericClassCompare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Il2CppGenericClassCompare.h; path = UnityExport/Libraries/libil2cpp/include/metadata/Il2CppGenericClassCompare.h; sourceTree = SOURCE_ROOT; };
 		FA72479481FB013D12F2D643 /* Il2CppGenericMethodHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Il2CppGenericMethodHash.h; path = UnityExport/Libraries/libil2cpp/include/metadata/Il2CppGenericMethodHash.h; sourceTree = SOURCE_ROOT; };
 		FA9E46B98491794CB4922295 /* MonoEventInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MonoEventInfo.h; path = UnityExport/Libraries/libil2cpp/include/icalls/mscorlib/System.Reflection/MonoEventInfo.h; sourceTree = SOURCE_ROOT; };
-		FAED1AA1D18745CAB8DEFA4A /* RNUnityView.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNUnityView.xcodeproj; path = "../node_modules/react-native-unity-view/ios/RNUnityView.xcodeproj"; sourceTree = "<group>"; };
+		FAED1AA1D18745CAB8DEFA4A /* RNUnityView.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNUnityView.xcodeproj; path = "../node_modules/react-native-unity-view/ios/RNUnityView.xcodeproj"; sourceTree = "<group>"; };
 		FBA143D2882997AB1FE95E97 /* AssemblyName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AssemblyName.h; path = UnityExport/Libraries/libil2cpp/include/vm/AssemblyName.h; sourceTree = SOURCE_ROOT; };
 		FC18406290D3DFA09F3D0048 /* DefaultConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DefaultConfig.h; path = UnityExport/Libraries/libil2cpp/include/icalls/System/System.Configuration/DefaultConfig.h; sourceTree = SOURCE_ROOT; };
 		FCCB47B8BC50853E53D2AEBB /* SplashScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SplashScreen.h; path = UnityExport/Classes/UI/SplashScreen.h; sourceTree = SOURCE_ROOT; };
@@ -1404,6 +1413,7 @@
 		13B07FAE1A68108700A75B9A /* NativeProjectIntegration */ = {
 			isa = PBXGroup;
 			children = (
+				33CE1165228B27DA00B31911 /* UnityConfig.xcconfig */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -1424,16 +1434,16 @@
 				3DAD3EA71DF850E9000B6D8A /* libyoga.a */,
 				3DAD3EA91DF850E9000B6D8A /* libcxxreact.a */,
 				3DAD3EAB1DF850E9000B6D8A /* libcxxreact.a */,
-				3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */,
-				3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */,
 				2DF0FFDF2056DD460020B375 /* libjsinspector.a */,
 				2DF0FFE12056DD460020B375 /* libjsinspector-tvOS.a */,
 				2DF0FFE32056DD460020B375 /* libthird-party.a */,
 				2DF0FFE52056DD460020B375 /* libthird-party.a */,
 				2DF0FFE72056DD460020B375 /* libdouble-conversion.a */,
 				2DF0FFE92056DD460020B375 /* libdouble-conversion.a */,
-				2DF0FFEB2056DD460020B375 /* libprivatedata.a */,
-				2DF0FFED2056DD460020B375 /* libprivatedata-tvOS.a */,
+				33CE1159228B278D00B31911 /* libjsi.a */,
+				33CE115B228B278D00B31911 /* libjsiexecutor.a */,
+				33CE115D228B278D00B31911 /* libjsi-tvOS.a */,
+				33CE115F228B278D00B31911 /* libjsiexecutor-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1536,6 +1546,22 @@
 				12BE44B7913FFE863B47B90A /* UnsafeNativeMethods.h */,
 			);
 			path = System.Runtime.InteropServices.WindowsRuntime;
+			sourceTree = "<group>";
+		};
+		33CE1132228B278B00B31911 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				7D43E22067F840FEA96E7EDB /* libRNUnityView.a */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		33CE1160228B278F00B31911 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33CE1164228B278F00B31911 /* libRNUnityView.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		39114DF7BE8A880C666BCB66 /* vm-utils */ = {
@@ -2002,6 +2028,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				A07D412EB677D89196F16E75 /* UnityExport */,
+				33CE1132228B278B00B31911 /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -2702,7 +2729,7 @@
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
-				00DD1BFF1BD5951E006B06BC /* ShellScript */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 			);
 			buildRules = (
 			);
@@ -2720,7 +2747,7 @@
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
 				2D02E4791E0B4A5D006451C7 /* Resources */,
-				2D02E4CB1E0B4B27006451C7 /* ShellScript */,
+				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
 			);
 			buildRules = (
 			);
@@ -2762,6 +2789,9 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = STYTV8XBK4;
+					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -2773,16 +2803,17 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Unity-iPhone" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "NativeProjectIntegration" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
-			productRefGroup = 83CBBA001A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
@@ -2832,6 +2863,10 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = 33CE1160228B278F00B31911 /* Products */;
+					ProjectRef = FAED1AA1D18745CAB8DEFA4A /* RNUnityView.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -2964,18 +2999,39 @@
 			remoteRef = 2DF0FFE82056DD460020B375 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2DF0FFEB2056DD460020B375 /* libprivatedata.a */ = {
+		33CE1159228B278D00B31911 /* libjsi.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libprivatedata.a;
-			remoteRef = 2DF0FFEA2056DD460020B375 /* PBXContainerItemProxy */;
+			path = libjsi.a;
+			remoteRef = 33CE1158228B278D00B31911 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2DF0FFED2056DD460020B375 /* libprivatedata-tvOS.a */ = {
+		33CE115B228B278D00B31911 /* libjsiexecutor.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = "libprivatedata-tvOS.a";
-			remoteRef = 2DF0FFEC2056DD460020B375 /* PBXContainerItemProxy */;
+			path = libjsiexecutor.a;
+			remoteRef = 33CE115A228B278D00B31911 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33CE115D228B278D00B31911 /* libjsi-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjsi-tvOS.a";
+			remoteRef = 33CE115C228B278D00B31911 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33CE115F228B278D00B31911 /* libjsiexecutor-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjsiexecutor-tvOS.a";
+			remoteRef = 33CE115E228B278D00B31911 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33CE1164228B278F00B31911 /* libRNUnityView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNUnityView.a;
+			remoteRef = 33CE1163228B278F00B31911 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */ = {
@@ -3055,20 +3111,6 @@
 			remoteRef = 3DAD3EAA1DF850E9000B6D8A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libjschelpers.a;
-			remoteRef = 3DAD3EAC1DF850E9000B6D8A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libjschelpers.a;
-			remoteRef = 3DAD3EAE1DF850E9000B6D8A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -3119,11 +3161,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				13B07FBD1A68108700A75B9A,
+				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				1CB44D12AB7839D00188923C /* profile.json in Resources */,
 				2A6C41D6B88D232F65F5826A /* libil2cpp.def in Resources */,
 				79914BC399A76DE706669AB2 /* libil2cpp.icalls in Resources */,
 				A32345BB9784C9E788015370 /* Data in Resources */,
+				33CE1166228B27DA00B31911 /* UnityConfig.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3145,7 +3188,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00DD1BFF1BD5951E006B06BC /* ShellScript */ = {
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3159,7 +3202,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		2D02E4CB1E0B4B27006451C7 /* ShellScript */ = {
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3443,10 +3486,12 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33CE1165228B27DA00B31911 /* UnityConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = STYTV8XBK4;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-unity-view/ios",
@@ -3458,7 +3503,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = Tsuyu.NativeProjectIntegration;
 				PRODUCT_NAME = NativeProjectIntegration;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -3469,6 +3514,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = STYTV8XBK4;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-unity-view/ios",
@@ -3480,7 +3527,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = Tsuyu.NativeProjectIntegration;
 				PRODUCT_NAME = NativeProjectIntegration;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -3622,6 +3669,7 @@
 		};
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33CE1165228B27DA00B31911 /* UnityConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -3675,6 +3723,7 @@
 		};
 		83CBBA211A601CBA00E9B192 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33CE1165228B27DA00B31911 /* UnityConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -3758,7 +3807,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Unity-iPhone" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "NativeProjectIntegration" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
