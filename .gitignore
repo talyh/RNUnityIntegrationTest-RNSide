@@ -57,3 +57,7 @@ buck-out/
 
 # Unity
 /unity
+
+# Unity Exports
+/android/UnityExport
+/ios/UnityExport
